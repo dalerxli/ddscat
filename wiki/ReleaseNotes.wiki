@@ -1,23 +1,24 @@
 #summary History of DDSCAT Releases.
 
-DDSCAT 7.0 was first released 2008.09.03 . The latest version of DDSCAT 7.0.7 is dated 2010.01.28: ddscat7.0.7.tgz 
-DDSCAT 7.0 can calculate scattering by isolated targets, just like DDSCAT 6.1, but has the additional capability of calculating scattering and absorption from targets that are periodic in one or two dimensions. 
-DDSCAT 7.0 is written in Fortran 90, and uses dynamic memory allocation. 
-DDSCAT 7.0 includes support for MPI, OpenMP, and FFT calculations using the Intel Math Kernel Library (MKL). 
-DDSCAT 7.0 is distributed with a simple post-processiong program DDpol.f90 to easily read out dipole polarizations after the scattering problem has been solved by DDSCAT. 
-DDSCAT 7.0 is distributed with a post-processing program DDfield.f90 for near-field calculation of E and B at points within or near the target after the scattering problem has been solved by DDSCAT. 
+ *DDSCAT 7.0 was first released 2008.09.03 . The latest version of DDSCAT 7.0.7 is dated 2010.01.28: ddscat7.0.7.tgz 
+ *DDSCAT 7.0 can calculate scattering by isolated targets, just like DDSCAT 6.1, but has the additional capability of calculating scattering and absorption from targets that are periodic in one or two dimensions. 
+ *DDSCAT 7.0 is written in Fortran 90, and uses dynamic memory allocation. 
+ *DDSCAT 7.0 includes support for MPI, OpenMP, and FFT calculations using the Intel Math Kernel Library (MKL). 
+ *DDSCAT 7.0 is distributed with a simple post-processiong program DDpol.f90 to easily read out dipole polarizations after the scattering problem has been solved by DDSCAT. 
+ *DDSCAT 7.0 is distributed with a post-processing program DDfield.f90 for near-field calculation of E and B at points within or near the target after the scattering problem has been solved by DDSCAT. 
 
 Bug fixes: 
-2010.01.28: corrected problem arising when IWRKSC = 0 in ddscat.par . This bug did not affect any calculated quantities, but caused errors in the names of output files. DDSCAT.f90 has been modified to correctly handle this case. Thanks to Sanaz Vahidinia (UCSD) for reporting this bug on 2010.01.28. 
-2010.01.24: corrected inconsistency between UserGuide and code regarding SHPAR(1-9) for target options RCTGLBLK3 and TRILYRPBC. Subroutine tarrctblk3.f90 has been modified to be consistent with UserGuide and CALLTARGET. Thanks to Bala Krishna Juluri (Penn State Univ.) for reporting this bug on 2010.01.23. 
-2009.12.11: corrected bug in reapar that prevented use of target options MULTBLOCKS and DW1996TAR. Thanks to Bernhard Wasserman (Free Univ. of Berlin) for reporting this bug on 2009.12.11. 
-2009.08.12: postprocessing program DDpol: corrected declaration of CFLPOL to agree with subroutine READPOL. The bug prevented DDpol from reading input files. Thanks to Rodrigo Alcaraz de la Osa (Univ. of Cantabria, Spain) for reporting this bug on 2009.08.12. 
-2009.07.08: postprocessing program DDfield: corrected typo that caused XMIN and XMINPHYS to be evaluated incorrectly. XMIN and XMINPHYS describe the spatial extent of target in x-direction. The bug did not affect any calculation of EM fields. Thanks to Shuzhou Li (Dept. of Chemistry, Northwestern University, Evanston IL) for reporting this bug on 2009.07.07. 
-2008.11.05: postprocessing program DDfield: minor syntax error causing compilation to fail for some compilers. Fixed. Thanks to Souraya Goumri-Said (Lab. de Physique de Solide, Univ. Notre-Dame de la Paix, Namur) for reporting this bug on 2008.11.05. 
-2008.10.30: postprocessing program DDpol: errors in memory allocation. Fixed. Thanks to Michel Devel for reporting this bug on 2008.10.30. 
-2008.10.28: target option MLTBLOCKS had missing argument in call to subroutine TARBLOCKS from routine TARGET. Fixed. Thanks to Michel Devel for reporting this bug on 2008.10.28. 
-2008.09.23: target option DSKBLYPBC was mistyped as DSBLYRBC in one place in routine REAPAR. Fixed. Thanks to Georges Levi (Universite-Paris-Diderot) for reporting this bug on 2008.09.23. 
-2008.09.17: target option name SPHRN_PBC was mistyped in routine REASHP, causing variable JPBC to be set incorrectly, and scattering results to be computed incorrectly for this option. Fixed. Thanks to Wang Lin (Nankai University) for reporting this error on 2008.09.16 
-2008.09.17: the target centroid X0(1-3) was being evaluated incorrectly for target options SPHERES_N, SPHRN_PBC and SPH_ANI_N . This error did not affect calculations of scattering and absorption. Fixed. Thanks to Wang Lin (Nankai University) for reporting this problem on 2008.09.16 
-2008.09.12: target option name DSKRCTNGL was mistyped as DSKRCTGNL in several places, including the UserGuide. Fixed: the correct spelling DSKRCTNGL is now used everywhere. Thanks to Georges Levi (Universite-Paris-Diderot) for reporting this bug on 2008.09.12. 
-2008.09.12: removed extraneous dummy READ statement in reashp.f90 for CSHAPE=FROM_FILE . Thanks to Stefan Kniefel (University of Cologne) for reporting this bug on 2008.09.08 
+ *2010.01.28: corrected problem arising when IWRKSC = 0 in ddscat.par . This bug did not affect any calculated quantities, but caused errors in the names of output files.     
+ *DDSCAT.f90 has been modified to correctly handle this case. Thanks to Sanaz Vahidinia (UCSD) for reporting this bug on 2010.01.28. 
+ *2010.01.24: corrected inconsistency between UserGuide and code regarding SHPAR(1-9) for target options RCTGLBLK3 and TRILYRPBC. Subroutine tarrctblk3.f90 has been modified to be consistent with UserGuide and CALLTARGET. Thanks to Bala Krishna Juluri (Penn State Univ.) for reporting this bug on 2010.01.23. 
+ *2009.12.11: corrected bug in reapar that prevented use of target options MULTBLOCKS and DW1996TAR. Thanks to Bernhard Wasserman (Free Univ. of Berlin) for reporting this bug on 2009.12.11. 
+ *2009.08.12: postprocessing program DDpol: corrected declaration of CFLPOL to agree with subroutine READPOL. The bug prevented DDpol from reading input files. Thanks to Rodrigo Alcaraz de la Osa (Univ. of Cantabria, Spain) for reporting this bug on 2009.08.12. 
+ *2009.07.08: postprocessing program DDfield: corrected typo that caused XMIN and XMINPHYS to be evaluated incorrectly. XMIN and XMINPHYS describe the spatial extent of target in x-direction. The bug did not affect any calculation of EM fields. Thanks to Shuzhou Li (Dept. of Chemistry, Northwestern University, Evanston IL) for reporting this bug on 2009.07.07. 
+ *2008.11.05: postprocessing program DDfield: minor syntax error causing compilation to fail for some compilers. Fixed. Thanks to Souraya Goumri-Said (Lab. de Physique de Solide, Univ. Notre-Dame de la Paix, Namur) for reporting this bug on 2008.11.05. 
+ *2008.10.30: postprocessing program DDpol: errors in memory allocation. Fixed. Thanks to Michel Devel for reporting this bug on 2008.10.30. 
+ *2008.10.28: target option MLTBLOCKS had missing argument in call to subroutine TARBLOCKS from routine TARGET. Fixed. Thanks to Michel Devel for reporting this bug on 2008.10.28. 
+ *2008.09.23: target option DSKBLYPBC was mistyped as DSBLYRBC in one place in routine REAPAR. Fixed. Thanks to Georges Levi (Universite-Paris-Diderot) for reporting this bug on 2008.09.23. 
+ *2008.09.17: target option name SPHRN_PBC was mistyped in routine REASHP, causing variable JPBC to be set incorrectly, and scattering results to be computed incorrectly for this option. Fixed. Thanks to Wang Lin (Nankai University) for reporting this error on 2008.09.16 
+ *2008.09.17: the target centroid X0(1-3) was being evaluated incorrectly for target options SPHERES_N, SPHRN_PBC and SPH_ANI_N . This error did not affect calculations of scattering and absorption. Fixed. Thanks to Wang Lin (Nankai University) for reporting this problem on 2008.09.16 
+ *2008.09.12: target option name DSKRCTNGL was mistyped as DSKRCTGNL in several places, including the UserGuide. Fixed: the correct spelling DSKRCTNGL is now used everywhere. Thanks to Georges Levi (Universite-Paris-Diderot) for reporting this bug on 2008.09.12. 
+ *2008.09.12: removed extraneous dummy READ statement in reashp.f90 for CSHAPE=FROM_FILE . Thanks to Stefan Kniefel (University of Cologne) for reporting this bug on 2008.09.08 
