@@ -1,6 +1,8 @@
 #summary History of DDSCAT Releases.
 
- * DDSCAT 7.0 was first released 2008.09.03 . The latest version of DDSCAT 7.0.7 is dated 2010.01.28: ddscat7.0.7.tgz 
+
+DDSCAT 7.0 was first released 2008.09.03 . The latest version of DDSCAT 7.0.7 is dated 2010.01.28: ddscat7.0.7.tgz 
+
  * DDSCAT 7.0 can calculate scattering by isolated targets, just like DDSCAT 6.1, but has the additional capability of calculating scattering and absorption from targets that are periodic in one or two dimensions. 
  * DDSCAT 7.0 is written in Fortran 90, and uses dynamic memory allocation. 
  * DDSCAT 7.0 includes support for MPI, OpenMP, and FFT calculations using the Intel Math Kernel Library (MKL). 
@@ -8,8 +10,7 @@
  * DDSCAT 7.0 is distributed with a post-processing program DDfield.f90 for near-field calculation of E and B at points within or near the target after the scattering problem has been solved by DDSCAT. 
 
 Bug fixes: 
- * 2010.01.28: corrected problem arising when IWRKSC = 0 in ddscat.par . This bug did not affect any calculated quantities, but caused errors in the names of output files.     
- * DDSCAT.f90 has been modified to correctly handle this case. Thanks to Sanaz Vahidinia (UCSD) for reporting this bug on 2010.01.28. 
+ * 2010.01.28: corrected problem arising when IWRKSC = 0 in ddscat.par . This bug did not affect any calculated quantities, but caused errors in the names of output files. DDSCAT.f90 has been modified to correctly handle this case. Thanks to Sanaz Vahidinia (UCSD) for reporting this bug on 2010.01.28. 
  * 2010.01.24: corrected inconsistency between UserGuide and code regarding SHPAR(1-9) for target options RCTGLBLK3 and TRILYRPBC. Subroutine tarrctblk3.f90 has been modified to be consistent with UserGuide and CALLTARGET. Thanks to Bala Krishna Juluri (Penn State Univ.) for reporting this bug on 2010.01.23. 
  * 2009.12.11: corrected bug in reapar that prevented use of target options MULTBLOCKS and DW1996TAR. Thanks to Bernhard Wasserman (Free Univ. of Berlin) for reporting this bug on 2009.12.11. 
  * 2009.08.12: postprocessing program DDpol: corrected declaration of CFLPOL to agree with subroutine READPOL. The bug prevented DDpol from reading input files. Thanks to Rodrigo Alcaraz de la Osa (Univ. of Cantabria, Spain) for reporting this bug on 2009.08.12. 
