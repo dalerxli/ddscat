@@ -1,10 +1,4 @@
-#summary One-sentence summary of this page.
-
-= Introduction =
-
-Add your content here.
-
-
+#summary Frequently Asked Questions
 = Frequently Asked Questions =
 
-For now see the DDSCAT Manual
+Nothing here yet
