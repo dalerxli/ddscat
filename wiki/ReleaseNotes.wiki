@@ -2,7 +2,7 @@
 #labels Featured
 
 
-DDSCAT 7.0 was first released 2008.09.03 . The latest version of DDSCAT 7.0.7 is dated 2010.01.28: ddscat7.0.7.tgz 
+DDSCAT 7.0 was first released 2008.09.03 . The latest version is DDSCAT 7.0.8 , dated 2010.02.04: ddscat7.0.8.tgz 
 
  * DDSCAT 7.0 can calculate scattering by isolated targets, just like DDSCAT 6.1, but has the additional capability of calculating scattering and absorption from targets that are periodic in one or two dimensions. 
  * DDSCAT 7.0 is written in Fortran 90, and uses dynamic memory allocation. 
