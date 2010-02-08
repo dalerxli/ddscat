@@ -20,7 +20,8 @@ DDSCAT 7.0 was first released 2008.09.03 . The latest version is DDSCAT 7.0.8 , 
  * DDSCAT 7.0 is distributed with a simple post-processiong program DDpol.f90 to easily read out dipole polarizations after the scattering problem has been solved by DDSCAT. 
  * DDSCAT 7.0 is distributed with a post-processing program DDfield.f90 for near-field calculation of E and B at points within or near the target after the scattering problem has been solved by DDSCAT. 
 
-Bug fixes: 
+Bug fixes:
+ * 2010.01.30: now allow use of TFRAME when specifying scattering directions for isolated targets.  Thanks to Lev Chuntonov (Weizmann Institute) for reporting this (inadvertent) restriction.
  * 2010.01.28: corrected problem arising when IWRKSC = 0 in ddscat.par . This bug did not affect any calculated quantities, but caused errors in the names of output files. DDSCAT.f90 has been modified to correctly handle this case. Thanks to Sanaz Vahidinia (UCSD) for reporting this bug on 2010.01.28. 
  * 2010.01.24: corrected inconsistency between User Guide and code regarding SHPAR(1-9) for target options RCTGLBLK3 and TRILYRPBC. Subroutine tarrctblk3.f90 has been modified to be consistent with User Guide and CALLTARGET. Thanks to Bala Krishna Juluri (Penn State Univ.) for reporting this bug on 2010.01.23. 
  * 2009.12.11: corrected bug in reapar that prevented use of target options MULTBLOCKS and DW1996TAR. Thanks to Bernhard Wasserman (Free Univ. of Berlin) for reporting this bug on 2009.12.11. 
