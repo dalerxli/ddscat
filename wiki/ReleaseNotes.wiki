@@ -1,7 +1,7 @@
 #summary History of DDSCAT Releases.
 #labels Featured
 
-DDSCAT 7.1 was first released 2010.02.07.  The latest version is DDSCAT 7.1.0 , dated 2010.02.07: ddscat7.1.0_100207.tgz
+DDSCAT 7.1 was first released 2010.02.07.  The latest version is DDSCAT 7.1.0 , dated 2010.03.03: ddscat7.1.0_100303.tgz
 
   * DDSCAT 7.1 offers a few new target options:
     * FRMFILPBC - to read user-supplied TUC for PBC calculations
@@ -10,7 +10,9 @@ DDSCAT 7.1 was first released 2010.02.07.  The latest version is DDSCAT 7.1.0 , 
     * SLBHOLPBC - periodic array of rectangular blocks with cylindrical holes
   * The distribution of 7.1 includes an "examples" subdirectory with ddscat.par files and selected output files for a number of target options.
 
-Bug fixes: none to date
+Bug fixes:
+
+ * 2010.03.03: fixed bug in target.f90 that prevented use of target option FRMFILPBC.  Thanks to Andre-Pierre Blanchard-Dionne (Polytechnique Montreal) for reporting this bug on 2010.03.03 .
 
 DDSCAT 7.0 was first released 2008.09.03 . The latest version is DDSCAT 7.0.8 , dated 2010.02.04: ddscat7.0.8.tgz 
 
