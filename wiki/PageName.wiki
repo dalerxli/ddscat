@@ -1,0 +1,25 @@
+#labels Featured
+=Windows version=
+Windows Distribution (NOTE. These executable codes should NOT be used for benchmark purposes because they were not optimized)
+
+|| File || Description || Purpose || Notes ||
+||[http://ddscat.googlecode.com/files/ddscat_g95mno_710_100303_sp.exe DDSCAT.exe] || DDSCAT || REQUIRED Calculates scattering || G95 -O2 -mno-cygwin, single precision, CYGWIN (use this version) ||
+||[http://ddscat.googlecode.com/files/ddscat_g95mno_710_100303_dp.exe DDSCAT.exe] || DDSCAT || Calculates scattering || G95 -O2 -mno-cygwin, double precision, CYGWIN ||
+||[http://ddscat.googlecode.com/files/ddscat_ellipsoid_710_100303.par ddscat.par] || ddscat.par || REQUIRED input file || download and rename to ddscat.par ||
+||[http://ddscat.googlecode.com/files/m1.50_0.01 diel.tab] || diel.tab|| REQUIRED defines dielectric constant|| keep in ../diel directory ||
+||[http://ddscat.googlecode.com/files/calltarget_g95mno_710_100303_sp.exe CALLTARGET.exe] || Calltarget || Create shape file|| G95 -O2 -mno-cygwin, single precision, CYGWIN ||
+||[http://ddscat.googlecode.com/files/ddfield_g95mno_710_100303_sp.exe DDFIELD.exe] || DDFIELD || Calculate near field || G95 -O2 -mno-cygwin, single precision, CYGWIN ||
+
+
+==Running DDSCAT on Windows==
+If you use Windows you should be able to run DDSCAT by downloading just 3 files - executable "ddscat.exe", example input file "ddscat.par" and example dieletric constant file "diel.tab".  Native  Windows executables do not require additional libraries. There are 2 versions - single and double precision; use the single precision. Note that these codes were compiled with basic options without optimizations.  If you plan to do large multiprocessor calculations you may want to recompile the code from the source.  
+
+ * Download ddscat...exe executable file (it has extension .exe) 
+ * Download ddscat...par file, rename it to ddscat.par
+ * Download example dielectric constant tabulation
+ * Place ddscat.exe ddscat.par in the same directory and diel.tab in ../diel directory (or make simple modification in ddscat.par to point to diel.tab file) 
+ * Enter windows command mode ("run" and "cmd") 
+ * Execute DDSCAT by entering ddscat.exe in the Windows command mode 
+
+There are other options to run the code on Windows. One possibility it to install Sun Virtualbox add Ubuntu Linux operating system. Install gfortran under Ubuntu. Once this is done you can follow instructions provided in the DDSCAT user manual (i.e. compile the code). 
+
