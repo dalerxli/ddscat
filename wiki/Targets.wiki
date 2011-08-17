@@ -1,0 +1,11 @@
+#labels Featured
+=Example shapes=
+||<a href="http://www.flickr.com/photos/64669133@N04/5894998101/" title="sphere40x40x40 by DDSCAT Images, on Flickr"><img src="http://farm6.static.flickr.com/5192/5894998101_666e0303a7_t.jpg" width="94" height="100" alt="sphere40x40x40">||<a href="http://www.flickr.com/photos/64669133@N04/5895564772/" title="ellipsoid80x80x40 by DDSCAT Images, on Flickr"><img src="http://farm6.static.flickr.com/5270/5895564772_d272d5cab0_t.jpg" width="94" height="100" alt="ellipsoid80x80x40">||<a href="http://www.flickr.com/photos/64669133@N04/5894998069/" title="cylinder_cap80x40 by DDSCAT Images, on Flickr"><img src="http://farm6.static.flickr.com/5070/5894998069_f1eb8896b4_t.jpg" width="94" height="100" alt="cylinder_cap80x40">||
+||<a href="http://www.flickr.com/photos/64669133@N04/5895948866/" title="tetrahedron80 by DDSCAT Images, on Flickr"><img src="http://farm6.static.flickr.com/5263/5895948866_36810618c6_t.jpg" width="94" height="100" alt="tetrahedron80">|| <a href="http://www.flickr.com/photos/64669133@N04/5895948838/" title="rctglprsm60x60x60 by DDSCAT Images, on Flickr"><img src="http://farm6.static.flickr.com/5192/5895948838_65b594183b_t.jpg" width="94" height="100" alt="rctglprsm60x60x60">||<a href="http://www.flickr.com/photos/64669133@N04/5895948812/" title="hex_prism80x40x1 by DDSCAT Images, on Flickr"><img src="http://farm6.static.flickr.com/5238/5895948812_a32fd82783_t.jpg" width="94" height="100" alt="hex_prism80x40x1">||
+
+==Periodic particles==
+Light scattering by periodic repetition of basic target (TUC) can be simulated within DDSCAT including shapes such as infinite cylinder, infinite hexagonals prisms, etc. One can also simulate targets such as cylindrical plates placed on slab and other shapes used in nano technology studies. 
+||<a href="http://www.flickr.com/photos/64669133@N04/5897223437/" title="cylndrpbc by DDSCAT Images, on Flickr"><img src="http://farm6.static.flickr.com/5312/5897223437_767e699951_t.jpg" width="94" height="100" alt="cylndrpbc">||<a href="http://www.flickr.com/photos/64669133@N04/5897223419/" title="dskblypbc by DDSCAT Images, on Flickr"><img src="http://farm6.static.flickr.com/5192/5897223419_f0402c5ef4_t.jpg" width="94" height="100" alt="dskblypbc">||
+
+
+[http://ddscat.googlecode.com/files/shapes_tuc1.jpg]
