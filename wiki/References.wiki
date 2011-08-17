@@ -1,0 +1,10 @@
+#labels Featured
+=References=
+
+
+If you publish results obtained with DDSCAT 7.1, please cite the following references:
+
+ * Draine, B. T. and Flatau, P. J., "User Guide to the Discrete Dipole Approximation Code DDSCAT 7.1", 2010.
+ * Draine, B.T., & Flatau, P.J., "Discrete dipole approximation for scattering calculations", J. Opt. Soc. Am. A, 11, 1491-1499 (1994).
+ * Draine, B.T., & Flatau, P.J., "Discrete-dipole approximation for periodic targets: theory and tests", J. Opt. Soc. Am. A, 25, 2593-2703 (2008) (if you carried out calculations for periodic structures).
+
