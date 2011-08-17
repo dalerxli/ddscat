@@ -1,0 +1,11 @@
+===Running DDSCAT on Windows===
+If you use Windows you should be able to run DDSCAT by downloading just 3 files - executable "ddscat.exe", example input file "ddscat.par" and example dieletric constant file "diel.tab".  Native  Windows executables do not require additional libraries. There are 2 versions - single and double precision; use the single precision. Note that these codes were compiled with basic options without optimizations.  If you plan to do large multiprocessor calculations you may want to recompile the code from the source.  
+
+ * Download ddscat...exe executable file (it has extension .exe) 
+ * Download ddscat...par file, rename it to ddscat.par
+ * Download example dielectric constant tabulation
+ * Place ddscat.exe ddscat.par in the same directory and diel.tab in ../diel directory (or make simple modification in ddscat.par to point to diel.tab file) 
+ * Enter windows command mode ("run" and "cmd") 
+ * Execute DDSCAT by entering ddscat.exe in the Windows command mode 
+
+There are other options to run the code on Windows. One possibility it to install Sun Virtualbox add Ubuntu Linux operating system. Install gfortran under Ubuntu. Once this is done you can follow instructions provided in the DDSCAT user manual (i.e. compile the code). 
