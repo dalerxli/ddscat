@@ -1,0 +1,7 @@
+#labels Featured
+=History=
+The idea of writing public release of the code originated when one of us (PJF) was visiting Princeton in 1990. The name DDSCAT was coined by BTD at that time. Our only joint picture is below. It was taken while working on the DDSCAT release 7 at Princeton, July 2007. In that time we were converting the code to FORTRAN90, worked on periodic structures, and improved the conjugate gradient solver.
+
+The review paper Draine, B.T., & Flatau, P.J., "Discrete dipole approximation for scattering calculations", J. Opt. Soc. Am. A, 11, 1491-1499 (1994) contains basic introduction to DDA.  In 2007 The Journal of the Optical Society of America (JOSA) included it in their list of the 50 most-cited JOSA papers and made it freeley available  [http://www.opticsinfobase.org/abstract.cfm?URI=josaa-11-4-1491]
+
+||<a href="http://www.flickr.com/photos/64669133@N04/5888135905/" title="DSC_0636web by DDSCAT Images, on Flickr"><img src="http://farm6.static.flickr.com/5263/5888135905_55c1fc85e0_m.jpg" width="240" height="180" alt="DSC_0636web">||
