@@ -1,3 +1,4 @@
+#labels Featured
 ===Running DDSCAT on Windows===
 If you use Windows you should be able to run DDSCAT by downloading just 3 files - executable "ddscat.exe", example input file "ddscat.par" and example dieletric constant file "diel.tab".  Native  Windows executables do not require additional libraries. There are 2 versions - single and double precision; use the single precision. Note that these codes were compiled with basic options without optimizations.  If you plan to do large multiprocessor calculations you may want to recompile the code from the source.  
 
