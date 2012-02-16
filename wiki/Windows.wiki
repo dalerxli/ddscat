@@ -12,6 +12,9 @@ and then execute "make all". The resulting ddscat.exe doesn’t require any non-
 objdump -x ddscat.exe | grep "DLL"
 command (it should give KERNEL32.dll, msvcrt.dll).
 
+Windows code contains documentation, examples, source code, and binaries. We use Inno Setup5 to create self-extracting file.
+
+
 =Windows 7.1 Release=
 
 Windows Distribution (NOTE. These executable codes should NOT be used for benchmark purposes because they were not optimized)
