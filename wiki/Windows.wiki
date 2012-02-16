@@ -1,6 +1,16 @@
 #labels Featured
 =Windows 7.2 Release=
-This Windows release is based on "gfortran". UserGuide contains description of options to run and compile DDSCAT on Windows. 
+This Windows release is based on "gfortran". User Guide contains description of options to run and compile DDSCAT on Windows. 
+
+The executable ﬁle discussed in "native executable" section was compiled using “gfortran” in the MINGW environment (http://www.mingw.org/). Once you have MINGW and MSYS installed, in “all programs” there is now the MinGW program "MinGW shell". Once you open this shell one can now compile Fortran code using "gfortran". The
+"make" and "tar" utilities are available. The command "pwd" shows which directory corresponds to the
+initial "MinGW" shell. For example it can be "/home/Piotr" which corresponds to windows directory
+"c:\mingw\msys\1.0\home\piotr".
+You now need to copy ddscat.tar ﬁles and untar them. To make a native executable, edit "Makeﬁle" so that the "LFLAGS" string is deﬁned to be
+LFLAGS=-static-libgcc -static-libgfortran
+and then execute "make all". The resulting ddscat.exe doesn’t require any non-windows libraries. This can be checked with the
+objdump -x ddscat.exe | grep "DLL"
+command.
 
 =Windows 7.1 Release=
 
