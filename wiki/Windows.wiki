@@ -10,7 +10,7 @@ You now need to copy ddscat.tar ﬁles and untar them. To make a native executab
 LFLAGS=-static-libgcc -static-libgfortran
 and then execute "make all". The resulting ddscat.exe doesn’t require any non-windows libraries. This can be checked with the
 objdump -x ddscat.exe | grep "DLL"
-command.
+command (it should give KERNEL32.dll, msvcrt.dll).
 
 =Windows 7.1 Release=
 
