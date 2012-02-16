@@ -1,4 +1,7 @@
 #labels Featured
+=Windows 7.2 Release=
+This Windows release is based on "gfortran". UserGuide contains description of options to run and compile DDSCAT on Windows. 
+
 =Windows 7.1 Release=
 
 Windows Distribution (NOTE. These executable codes should NOT be used for benchmark purposes because they were not optimized)
