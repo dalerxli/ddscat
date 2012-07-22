@@ -1,6 +1,8 @@
 #summary History of DDSCAT Releases.
 #labels Featured
 
+DDSCAT 7.2.2 was released in June of 2012 mostly error corrections
+DDSCAT 7.2 ("nearfield" and "graphics") was released in February 2012
 DDSCAT 7.1 was first released 2010.02.07.  The latest version is DDSCAT 7.1.0 , dated 2010.03.03: ddscat7.1.0_100303.tgz
 
   * DDSCAT 7.1 offers a few new target options:
