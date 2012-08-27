@@ -1,4 +1,4 @@
-#labels Featured
+#labels Deprecated
 = Conjugate gradient and numerics =
 
 DDSCAT uses several numerical techniques. Among them conjugate gradient methods and FFT are the most important. Google code conjugate gradient page maintained by us is available
