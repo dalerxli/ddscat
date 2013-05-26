@@ -1,3 +1,5 @@
+This is a copy of the DDSCAT 7.2 main page which got obsolete on may 26, 2013.
+
 = DDSCAT 7.2 =
 Discrete Dipole Scattering (DDSCAT) is a Fortran code for calculating scattering and absorption of light by irregular particles and periodic arrangement of irregular particles. It has been jointly developed by 
  * [http://en.wikipedia.org/wiki/Bruce_T._Draine Bruce T. Draine] (Dept. of Astrophysical Sciences, Princeton University, draine@astro.princeton.edu) and 
