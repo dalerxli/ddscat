@@ -1,0 +1,3 @@
+=Scatterlib=
+One of us (PJF)  maintains library of light scattering codes
+https://code.google.com/p/scatterlib
