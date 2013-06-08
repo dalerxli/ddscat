@@ -1,16 +1,13 @@
 #labels Featured
 =Windows 7.3 Release =
-Notes on how I native Windows executables.for DDSCAT 7.3.0 were made, Piotr J. Flatau, pflatau@ucsd.edu, June 9, 2013, GNU Copyright  Draine & Flatau 2013
+Notes on how native Windows executables for DDSCAT 7.3.0 were made. Piotr J. Flatau, pflatau@ucsd.edu, June 9, 2013, GNU Copyright  Draine & Flatau 2013
 
 
- * In directory ddscat7.3.9_130527_ingle32_gfortran_nomp_nompi_nomkl there is already precompiled ddscat.exe. You can run examples using this file on Windows computer. Notice that this is NOT optimal version of an executable  of DDSCAT. This version is in fact the most basic one so users can run the code and get familiar with DDSCAT fast. 
-Overall we still think that the best strategy is to use LINUX operating system (or alike).  But you can compile DDSCAT (we tested it) with  Intel compiler and MKL/OpenMP, MPI support on Windows. 
-You don't have to use MinGW shell on Windows but it is easier that way. Also, we run DDSCAT on Windows from command prompt and did not tested Visual Studio compilation. 
-
-
+ * In directory ddscat7.3.9_130527_ingle32_gfortran_nomp_nompi_nomkl there is already precompiled ddscat.exe. You can run examples using this executable file on Windows computer. Notice that this is NOT optimal version of an executable of DDSCAT. This version is in fact the most basic one so users can run the code and get familiar with DDSCAT fast on various Windows machines. 
+Overall we still think that the best strategy is to use LINUX operating system (or alike) to run DDSCAT.  But you can compile DDSCAT (we tested it) with Intel compiler and MKL/OpenMP, MPI support on Windows. 
+You don't have to use MinGW shell on Windows but it is easier that way. Also, we run DDSCAT on Windows from command prompt and did not tested Visual Studio compilation.  What I have done to compile DDSCAT on Windows:
 
  * Downloaded  ddscat7.3.0_130527.tgz and ddscat7.3.0_examples_130526.tgz from GOOGLE CODE DDSCAT https://code.google.com/p/ddscat/
-
  * MinGW Installation. You will need MinGW to run DDSCAT easily. It is free at http://www.mingw.org/
  * Install MinGW and add paths to System Environment Control Panel/Advanced system Settings opens system Properties Window/Environmental Variables. In System Variables add c:\MinGW\bin;c:\MinGW\msys\1.0\bin;C:\
  * Installation of ddscat7.3.0.130527_single32_gfortran_nomp_nompi_nomkl
