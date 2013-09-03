@@ -2,7 +2,54 @@
 =Windows 7.3 Release =
 Notes on how native Windows executables for DDSCAT 7.3.0 were made. Piotr J. Flatau, pflatau@ucsd.edu, June 9, 2013, GNU Copyright  Draine & Flatau 2013
 
+==64-bit==
 
+The way I have created 64 bit mingw
+
+Go to 
+
+http://sourceforge.net/projects/mingwbuilds/
+and download file "mingw-builds-install.exe"
+This is executable file and it will install 64 bit "gfortran" (among other things)
+
+During the installation of "mingw-builds-install.exe"  one has to define  options
+Architecture: x64 (of course)
+Threads: win32  (NOTE: there is another option -   "posix"  but if this is specified one needs libwinpthread-1.dll library during linking step)
+
+This install files in directory
+c:/Program files/mingw-builds/x64-4.8.1-win32-seh-rev5/mingw
+
+Install also 32-bit MinGW/MSYS because his provides some additional programs such as "make"
+
+http://sourceforge.net/projects/mingw/files/Installer/
+
+http://www.mingw.org/wiki/Getting_Started
+
+
+To compile 64 bit application one needs to run 64-bit (not 32-bit) terminal which is located here
+
+start/all programs/Mingw by mingw-builds-project
+x64-4.8.1-win32-seh-rev5
+run terminal
+
+Now you can compile 64 bit DDSCAT by moving to proper directory and
+cd c:/ddscat/src
+make all
+
+
+Compiled with nompi, nomkl,nomp using gfortran and 
+
+LFLAGS	= -static-libgcc -static-libgfortran
+after compilation tested libraries
+
+ojdump -x ddscat.exe | grep "DLL" 
+
+KERNEL32.dll
+msvcrt.dll
+USER32.dll
+
+
+==32-bit==
  * In directory ddscat7.3.9_130527_ingle32_gfortran_nomp_nompi_nomkl there is already precompiled ddscat.exe. You can run examples using this executable file on Windows computer. Notice that this is NOT optimal version of an executable of DDSCAT. This version is in fact the most basic one so users can run the code and get familiar with DDSCAT fast on various Windows machines. 
 Overall we still think that the best strategy is to use LINUX operating system (or alike) to run DDSCAT.  But you can compile DDSCAT (we tested it) with Intel compiler and MKL/OpenMP, MPI support on Windows. 
 You don't have to use MinGW shell on Windows but it is easier that way. Also, we run DDSCAT on Windows from command prompt and did not tested Visual Studio compilation.  What I have done to compile DDSCAT on Windows:
