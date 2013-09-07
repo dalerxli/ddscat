@@ -1,5 +1,10 @@
-#summary History of DDSCAT Releases.
 #labels Featured
+ * DDSCAT 7.3.0 was released May 26, 2013 (we would like to thank several people including Choliy Vasyl, Jay Foley, Ryan Honeyager who beta tested this release)
+ * DDSCAT 7.2.0 was released 2012 February 16 
+ * DDSCAT 7.2.1 was released 2012 May 14
+ * DDSCAT 7.3.0 was released 2013, May 26
+
+#summary History of DDSCAT Releases.
 
 DDSCAT 7.2.2 was released in June of 2012 mostly error corrections
 DDSCAT 7.2 ("nearfield" and "graphics") was released in February 2012
