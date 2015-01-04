@@ -4,8 +4,7 @@ The idea of writing public release of the code originated when one of us (Piotr 
 
 In the fall of 2011 we worked on the fast near field calculations as well as capabilities to display shapes and results using modern three dimensional graphical software such as Mayavi2 or Paraview. We published  paper about this in Optics Express. In February 2012, around Valentine's day, we released version 7.2 which added support for the VTK graphical file format generation and converted DDSCAT to a subroutine. We also worked on improvements to native Windows release and switched from G95 to gfortran in the process (we also use INTEL compiler, particularly for producing more robust code).
 
-
-In 2013 we released version DDSCAT 7.3. Besides some algorithmic advances we moved towards more complete postprocessing code based on binary output. When we originally wrote the DDSCAT code such applications were beyond our original intentions. In 2014 we wrote a paper on hexagonal ice scattering which uses 2008 extension to periodic structures. We were able to solve light scattering problem for x=400, 
+In 2013 we released version DDSCAT 7.3. It included 64-bit Windows version, Besides some algorithmic advances we moved towards more complete postprocessing code based on binary output. Downloads include now some codes provided by users.  In 2014 we wrote a paper on hexagonal ice scattering which uses 2008 extension to periodic structures. We were able to solve light scattering problem for x=400.
 
 As of June 8, 2012 the number of citations to our JOSA 1994 paper was 1043. Out of 83,990 papers published by J. Opt. Soc. Am A, B, and Applied Optics it was their 15th most referenced paper. Around 2012 many of the users using DDSCAT are working in the field of nano technology. In January 2015 it was the 5th most referenced paper in JOSA.
 
