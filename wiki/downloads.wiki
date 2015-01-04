@@ -1,4 +1,4 @@
-DDSCAT are available at external repositoy.
+DDSCAT releases and documentation are now available at external repository. This system of distributions has begun in January of 2015.
 
 
 ==Release 7.3.0==
