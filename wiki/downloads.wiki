@@ -2,4 +2,6 @@ DDSCAT are available at external repositoy.
 
 
 ==Documentation==
-[https://www.dropbox.com/s/n2mgrkx3tqqir39/ddscat7.3.0_UserGuide_130529.pdf?dl=0 DDSCAT 7.3.0 User Guide]
+[https://www.dropbox.com/s/n2mgrkx3tqqir39/ddscat7.3.0_UserGuide_130529.pdf?dl=0 DDSCAT 7.3.0 User Guide (130529)]
+
+[https://www.dropbox.com/s/cn9a23txwrzh827/ddscat7.3.0_examples_130526.tgz?dl=0 DDSCAT 7.3.0 Examples (130526)]
