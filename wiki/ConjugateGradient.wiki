@@ -1,4 +1,3 @@
-#labels Featured
 =Conjugate gradient library CCGPAK2.0=
 We maintain library of conjugate gradient codes
 http://code.google.com/p/conjugate-gradient-lib/
