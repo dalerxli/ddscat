@@ -18,4 +18,4 @@ DDSCAT releases and documentation are now available at external repository. This
 [https://www.dropbox.com/s/oksuei1kle7dz11/ddaconvert-r17.tar.gz?dl=0 DDA convert]
 
 ==Miscellaneous==
-[https://www.dropbox.com/s/dird9v7lt1a9m6v/DSC_0636web.jpg?dl=0 Picture of B. T. Draine (left) and P. J. Flatau (right)]
+[https://www.dropbox.com/s/dird9v7lt1a9m6v/DSC_0636web.jpg?dl=0 Picture of B. T. Draine (right, looking into page) and P. J. Flatau (left)]
