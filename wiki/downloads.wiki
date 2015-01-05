@@ -6,17 +6,16 @@ DDSCAT releases and documentation are now available at external repository. This
 
 [http://bit.ly/13RNh8m DDSCAT 7.3.0 sources]
 
+[http://bit.ly/17c0fQm DDSCAT 73 Windows version including executables and documentation]
 
-[https://www.dropbox.com/s/fuskupcpdtixx14/ddscat73_130527_windows130903.zip?dl=0 DDSCAT 73 Windows version including executables and documentation]
+[http://bit.ly/1KdiS5J DDSCAT 7.3.0 documentation]
 
-[https://www.dropbox.com/s/2zol3fj7njsazsi/ddscat7.3.0_doc_130526.tgz?dl=0 DDSCAT 7.3.0 documentation]
+[http://bit.ly/14obwft DDSCAT 7.3.0 User Guide]
 
-[https://www.dropbox.com/s/n2mgrkx3tqqir39/ddscat7.3.0_UserGuide_130529.pdf?dl=0 DDSCAT 7.3.0 User Guide]
-
-[https://www.dropbox.com/s/cn9a23txwrzh827/ddscat7.3.0_examples_130526.tgz?dl=0 DDSCAT 7.3.0 Examples]
+[http://bit.ly/1AdpVIp DDSCAT 7.3.0 Examples]
 
 ==User supported (not supported by Draine and Flatau)==
-[https://www.dropbox.com/s/oksuei1kle7dz11/ddaconvert-r17.tar.gz?dl=0 DDA convert]
+[http://bit.ly/1ByZKJi DDA convert]
 
 ==Miscellaneous==
-[https://www.dropbox.com/s/dird9v7lt1a9m6v/DSC_0636web.jpg?dl=0 Picture of B. T. Draine (right, looking into page) and P. J. Flatau (left)]
+[http://bit.ly/1ByKyMx Picture of B. T. Draine (right, looking into page) and P. J. Flatau (left)]
