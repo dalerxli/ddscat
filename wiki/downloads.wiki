@@ -4,7 +4,7 @@ DDSCAT releases and documentation are now available at external repository. This
 
 ==Release 7.3.0==
 
-[http://bit.ly/13RNh8m DDSCAT 7.3.0 sources]
+[http://bit.ly/13RNh8m DDSCAT 7.3.0 FORTRAN code (LINUX, Windows, but needs compilation]
 
 [http://bit.ly/17c0fQm DDSCAT 73 Windows version including executables and documentation]
 
