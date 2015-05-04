@@ -1,0 +1,14 @@
+# Conjugate gradient library CCGPAK2.0 #
+We maintain library of conjugate gradient codes
+http://code.google.com/p/conjugate-gradient-lib/
+
+| File | Description | Language |
+|:-----|:------------|:---------|
+| [User Guide](http://arxiv.org/abs/1208.4869) | Conjugate gradient library CCGPAK2.0| Documentation|
+| ccgpak2\_0.zip | Conjugate gradient library CCGPAK2.0| FORTRAN90|
+
+CCGPAK  is designed to solve single or double precision system of linear equations
+
+Ax = y
+
+where  A  is  complex matrix, x is unknown, and y is known right hand side vector. The impetus for this library has been provided by applications in computational electromagnetics, in particular in the Discrete Dipole Approximation code DDSCAT (see Piotr J. Flatau, Improvements in the discrete-dipole approximation method of computing scattering and absorption, Optics Letters, 22, 1205-1207 and [google DDSCAT code site](http://code.google.com/p/ddscat/)).  However, the codes are general and not limited to such applications. All codes are written in FORTRAN90.  Older  FORTRAN implementations were converted using NAGWare FORTRAN Tools and further changes.  Calls to BLAS (Basic Linear Algebra Subprograms) are removed in favor of FORTRAN90 intrinsic functions. All codes are for complex matrices. It is arguably trivial task to convert them to real system of linear equations.   Clearly, there are now other implementations and libraries for iterative methods, the purpose of this library is to provide yet another package but which includes recent algorithms or variants.

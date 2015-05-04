@@ -1,0 +1,7 @@
+# Conjugate gradient and numerics #
+
+DDSCAT uses several numerical techniques. Among them conjugate gradient methods and FFT are the most important. Google code conjugate gradient page maintained by us is available
+
+http://code.google.com/p/conjugate-gradient-lib/
+
+it provides access to several conjugate gradient packages and codes which we tested in the past.

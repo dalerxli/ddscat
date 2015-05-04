@@ -1,0 +1,113 @@
+# Windows 7.3 Release #
+Notes on how native Windows executables for DDSCAT 7.3.0 were made. Piotr J. Flatau, pflatau@ucsd.edu, June 9, 2013, GNU Copyright  Draine & Flatau 2013
+
+## 64-bit ##
+
+The way I have created 64 bit mingw
+
+Go to
+
+http://sourceforge.net/projects/mingwbuilds/
+and download file "mingw-builds-install.exe"
+This is executable file and it will install 64 bit "gfortran" (among other things)
+
+During the installation of "mingw-builds-install.exe"  one has to define  options
+Architecture: x64 (of course)
+Threads: win32  (NOTE: there is another option -   "posix"  but if this is specified one needs libwinpthread-1.dll library during linking step)
+
+This install files in directory
+c:/Program files/mingw-builds/x64-4.8.1-win32-seh-rev5/mingw
+
+Install also 32-bit MinGW/MSYS because his provides some additional programs such as "make"
+
+http://sourceforge.net/projects/mingw/files/Installer/
+
+http://www.mingw.org/wiki/Getting_Started
+
+
+To compile 64 bit application one needs to run 64-bit (not 32-bit) terminal which is located here
+
+start/all programs/Mingw by mingw-builds-project
+x64-4.8.1-win32-seh-rev5
+run terminal
+
+Now you can compile 64 bit DDSCAT by moving to proper directory and
+cd c:/ddscat/src
+make all
+
+
+Compiled with nompi, nomkl,nomp using gfortran and
+
+LFLAGS	= -static-libgcc -static-libgfortran
+after compilation tested libraries
+
+ojdump -x ddscat.exe | grep "DLL"
+
+KERNEL32.dll
+msvcrt.dll
+USER32.dll
+
+
+## 32-bit ##
+  * In directory ddscat7.3.9\_130527\_ingle32\_gfortran\_nomp\_nompi\_nomkl there is already precompiled ddscat.exe. You can run examples using this executable file on Windows computer. Notice that this is NOT optimal version of an executable of DDSCAT. This version is in fact the most basic one so users can run the code and get familiar with DDSCAT fast on various Windows machines.
+Overall we still think that the best strategy is to use LINUX operating system (or alike) to run DDSCAT.  But you can compile DDSCAT (we tested it) with Intel compiler and MKL/OpenMP, MPI support on Windows.
+You don't have to use MinGW shell on Windows but it is easier that way. Also, we run DDSCAT on Windows from command prompt and did not tested Visual Studio compilation.  What I have done to compile DDSCAT on Windows:
+
+  * Downloaded  ddscat7.3.0\_130527.tgz and ddscat7.3.0\_examples\_130526.tgz from GOOGLE CODE DDSCAT https://code.google.com/p/ddscat/
+  * MinGW Installation. You will need MinGW to run DDSCAT easily. It is free at http://www.mingw.org/
+  * Install MinGW and add paths to System Environment Control Panel/Advanced system Settings opens system Properties Window/Environmental Variables. In System Variables add c:\MinGW\bin;c:\MinGW\msys\1.0\bin;C:\
+  * Installation of ddscat7.3.0.130527\_single32\_gfortran\_nomp\_nompi\_nomkl
+  * MinGW32
+  * GFORTRAN
+  * Single precision
+  * 32 bit gfortran compiler (i.e. THERE IS 2Gbyte MEMORY LIMIT)
+  * Without OPENMP, Witout MPI, Without MKL option
+  * Eddited Makefile and added these lines (gfortran section)
+  * LFLAGS	= -static-libgcc -static-libgfortran
+  * MKLROOT	=
+  * INCLUDE	=
+  * make all (it build ddscat.exe and other executables). I have tested that
+  * objdump -x ddscat.exe | grep "DLL" command (it should give KERNEL32.dll, msvcrt.dll).
+  * I have tested that example ELLIPSOID works. Notice that all tests and compilation were done in MinGW  shell window
+  * All Programs/MinGW/MinGW Shell
+
+# Windows 7.2 Release #
+This Windows release is based on "gfortran". User Guide contains description of options to run and compile DDSCAT on Windows.
+
+The executable ﬁle discussed in "native executable" section was compiled using “gfortran” in the MINGW environment (http://www.mingw.org/). Once you have MINGW and MSYS installed, in “all programs” there is now the MinGW program "MinGW shell". Once you open this shell one can now compile Fortran code using "gfortran". The
+"make" and "tar" utilities are available. The command "pwd" shows which directory corresponds to the
+initial "MinGW" shell. For example it can be "/home/Piotr" which corresponds to windows directory
+"c:\mingw\msys\1.0\home\piotr".
+You now need to copy ddscat.tar ﬁles and untar them. To make a native executable, edit "Makeﬁle" so that the "LFLAGS" string is deﬁned to be
+LFLAGS=-static-libgcc -static-libgfortran
+and then execute "make all". The resulting ddscat.exe doesn’t require any non-windows libraries. This can be checked with the
+objdump -x ddscat.exe | grep "DLL"
+command (it should give KERNEL32.dll, msvcrt.dll).
+
+Windows code contains documentation, examples, source code, and binaries. We use Inno Setup5 to create self-extracting file.
+
+
+# Windows 7.1 Release #
+
+Windows Distribution (NOTE. These executable codes should NOT be used for benchmark purposes because they were not optimized)
+| File | Description | Purpose | Notes |
+|:-----|:------------|:--------|:------|
+|[DDSCAT.exe](http://ddscat.googlecode.com/files/ddscat_g95mno_710_100303_sp.exe) | DDSCAT | REQUIRED Calculates scattering | G95 -O2 -mno-cygwin, single precision, CYGWIN (use this version) |
+|[DDSCAT.exe](http://ddscat.googlecode.com/files/ddscat_g95mno_710_100303_dp.exe) | DDSCAT | Calculates scattering | G95 -O2 -mno-cygwin, double precision, CYGWIN |
+|[ddscat.par](http://ddscat.googlecode.com/files/ddscat_ellipsoid_710_100303.par) | ddscat.par | REQUIRED input file | download and rename to ddscat.par |
+|[diel.tab](http://ddscat.googlecode.com/files/m1.50_0.01) | diel.tab| REQUIRED defines dielectric constant| keep in ../diel directory |
+|[CALLTARGET.exe](http://ddscat.googlecode.com/files/calltarget_g95mno_710_100303_sp.exe) | Calltarget | Create shape file| G95 -O2 -mno-cygwin, single precision, CYGWIN |
+|[DDFIELD.exe](http://ddscat.googlecode.com/files/ddfield_g95mno_710_100303_sp.exe) | DDFIELD | Calculate near field | G95 -O2 -mno-cygwin, single precision, CYGWIN |
+
+
+## Running DDSCAT on Windows ##
+If you use Windows you should be able to run DDSCAT by downloading just 3 files - executable "ddscat.exe", example input file "ddscat.par" and example dieletric constant file "diel.tab".  Native  Windows executables do not require additional libraries. There are 2 versions - single and double precision; use the single precision. Note that these codes were compiled with basic options without optimizations.  If you plan to do large multiprocessor calculations you may want to recompile the code from the source.
+
+  * Download ddscat...exe executable file (it has extension .exe)
+  * Download ddscat...par file, rename it to ddscat.par
+  * Download example dielectric constant tabulation
+  * Place ddscat.exe ddscat.par in the same directory and diel.tab in ../diel directory (or make simple modification in ddscat.par to point to diel.tab file)
+  * Enter windows command mode ("run" and "cmd")
+  * Execute DDSCAT by entering ddscat.exe in the Windows command mode
+
+There are other options to run the code on Windows. One possibility it to install Sun Virtualbox add Ubuntu Linux operating system. Install gfortran under Ubuntu. Once this is done you can follow instructions provided in the DDSCAT user manual (i.e. compile the code).
